@@ -545,6 +545,29 @@ footer {
   .link_area { flex-direction: column; gap: 40px; }
 }
 
+/* ===== INSTAGRAM FIXED BUTTON ===== */
+.ig_fixed {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 500;
+  width: 52px;
+  height: 52px;
+  background: #111;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f7f6f2;
+  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.5);
+}
+.ig_fixed:hover {
+  background: #333;
+  transform: translateY(-2px);
+}
+
 /* ===== SP FIXED BOTTOM ===== */
 .btn_location_sp {
   display: none;
