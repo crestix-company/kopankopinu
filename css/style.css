@@ -1,10 +1,18 @@
 /* ===== RESET & BASE ===== */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { font-size: 16px; }
+:root {
+  --bg: #ffffff;
+  --bg-soft: #f7f4ee;
+  --bg-soft-2: #f1ece3;
+  --text: #2f2a24;
+  --text-muted: #6f675d;
+  --line: rgba(47,42,36,0.14);
+}
 body {
   font-family: "Noto Sans JP","ヒラギノ角ゴシック Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
-  background: #111;
-  color: #f7f6f2;
+  background: var(--bg);
+  color: var(--text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.8;
@@ -31,7 +39,7 @@ header {
   width: 100%;
   height: 100vh;
   min-height: 500px;
-  background: #111;
+  background: var(--bg-soft-2);
   overflow: hidden;
 }
 
@@ -169,7 +177,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   display: none;
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(17,17,17,0.97);
+  background: rgba(255,255,255,0.97);
   z-index: 200;
   flex-direction: column;
   align-items: center;
@@ -182,14 +190,14 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #f7f6f2;
+  color: var(--text);
 }
 .sp_nav_close {
   position: absolute;
   top: 20px; right: 24px;
   background: none;
   border: none;
-  color: #f7f6f2;
+  color: var(--text);
   font-size: 26px;
   cursor: pointer;
   line-height: 1;
@@ -201,7 +209,89 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 }
 
 /* ===== TOP AREA ===== */
-.top_area { background: #111; }
+.top_area { background: var(--bg); }
+
+/* ===== CALENDAR ===== */
+.calendar_area {
+  background: var(--bg);
+  padding: 56px 24px 24px;
+}
+.calendar_inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.calendar_heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+.calendar_kicker {
+  font-family: "Open Sans","Roboto",sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  color: var(--text-muted);
+  opacity: 0.7;
+  margin-bottom: 14px;
+}
+.calendar_heading h2 {
+  font-family: "Noto Sans JP",sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  line-height: 1.4;
+}
+.calendar_note {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+.calendar_embed {
+  background: var(--bg-soft);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 18px;
+}
+.calendar_embed iframe {
+  width: 100%;
+  min-height: 640px;
+  border: 0;
+  display: block;
+  border-radius: 16px;
+}
+.calendar_placeholder {
+  min-height: 640px;
+  border: 1px dashed var(--line);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 24px;
+}
+.calendar_placeholder p {
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+@media (max-width: 740px) {
+  .calendar_area {
+    padding: 40px 16px 16px;
+  }
+  .calendar_heading h2 {
+    font-size: 24px;
+  }
+  .calendar_embed {
+    padding: 12px;
+    border-radius: 18px;
+  }
+  .calendar_embed iframe,
+  .calendar_placeholder {
+    min-height: 520px;
+    border-radius: 12px;
+  }
+}
 
 /* ===== HOURS AREA ===== */
 .hours_area {}
@@ -209,14 +299,14 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .txt_box {
   padding: 80px 60px;
   text-align: center;
-  background: #111;
+  background: var(--bg);
 }
 .txt_box .ttl02 {
   font-family: "Open Sans","Roboto", sans-serif;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.28em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.5;
   margin-bottom: 30px;
 }
@@ -226,14 +316,14 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   font-weight: 800;
   letter-spacing: 0.06em;
   line-height: 1.4;
-  color: #f7f6f2;
+  color: var(--text);
 }
 .txt_box p span { font-size: 18px; font-weight: 400; letter-spacing: 0.08em; display: block; margin-top: 6px; }
 .txt_box .close {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.15em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.5;
   margin-top: 24px;
 }
@@ -247,7 +337,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .img_area {
   position: relative;
   width: 100%;
-  background: #0a0a0a;
+  background: var(--bg-soft);
 }
 .img_area .img,
 .img_area .img_about,
@@ -274,14 +364,14 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .txt_lead_area {
   padding: 70px 60px;
   max-width: 900px;
-  background: #111;
+  background: var(--bg);
 }
 .txt_lead_area h3 {
   font-family: "Open Sans","Roboto", sans-serif;
   font-size: 22px;
   font-weight: 800;
   letter-spacing: 0.14em;
-  color: #f7f6f2;
+  color: var(--text);
   margin-bottom: 20px;
 }
 .txt_lead_area h3 span {
@@ -297,7 +387,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   font-size: 15px;
   font-weight: 400;
   line-height: 2;
-  color: #f7f6f2;
+  color: var(--text);
   opacity: 0.85;
   margin-bottom: 16px;
 }
@@ -305,7 +395,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   font-family: "Open Sans", sans-serif;
   font-size: 13px;
   font-weight: 300;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.45;
   line-height: 1.85;
   margin-top: 14px;
@@ -330,7 +420,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 
 /* ===== NEWS BOX ===== */
 .news_box {
-  background: #0a0a0a;
+  background: var(--bg-soft);
   line-height: 0;
 }
 .news_box p img {
@@ -342,10 +432,10 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .news_box p.txt {
   line-height: 1.9;
   font-size: 14px;
-  color: #f7f6f2;
+  color: var(--text);
   opacity: 0.75;
   padding: 32px 60px;
-  background: #111;
+  background: var(--bg);
 }
 .news_box p.txt .en {
   display: block;
@@ -361,7 +451,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 
 /* ===== BIRD DOUGHNUT AREA ===== */
 .bird_doughnut_area {
-  background: #111;
+  background: var(--bg);
 }
 .bird_doughnut_area .img_area p.img img {
   width: 100%;
@@ -371,11 +461,11 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 }
 
 /* ===== ABOUT AREA ===== */
-.about_area { background: #111; }
+.about_area { background: var(--bg); }
 
 .bread_box {
   position: relative;
-  background: #0a0a0a;
+  background: var(--bg-soft);
   line-height: 0;
 }
 .bread_box > p img {
@@ -387,7 +477,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .bread_box .txt_lead_area {
   position: absolute;
   bottom: 0; right: 0;
-  background: rgba(17,17,17,0.88);
+  background: rgba(255,255,255,0.88);
   max-width: 520px;
   padding: 48px 60px;
 }
@@ -395,7 +485,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   .bread_box .txt_lead_area {
     position: static;
     max-width: 100%;
-    background: #111;
+    background: var(--bg);
     padding: 40px 24px;
   }
   .bread_box > p img {
@@ -408,7 +498,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.28em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.4;
   padding: 64px 60px 0;
   text-align: center;
@@ -421,17 +511,17 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .instagram {
   text-align: center;
   padding: 80px 0;
-  background: #111;
+  background: var(--bg);
 }
 .instagram .inst {
   font-family: "Open Sans","Roboto", sans-serif;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.28em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.5;
   transition: opacity 0.2s;
-  border-bottom: 1px solid rgba(247,246,242,0.25);
+  border-bottom: 1px solid var(--line);
   padding-bottom: 4px;
 }
 .instagram .inst:hover { opacity: 0.85; }
@@ -440,14 +530,14 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 .pagetop_area {
   text-align: center;
   padding: 40px 0;
-  background: #111;
+  background: var(--bg);
 }
 .pagetop_area a {
   font-family: "Open Sans", sans-serif;
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.2em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.35;
   transition: opacity 0.2s;
 }
@@ -455,9 +545,9 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
 
 /* ===== FOOTER ===== */
 footer {
-  background: #0d0d0d;
+  background: var(--bg-soft);
   padding: 60px 60px 40px;
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid var(--line);
 }
 .link_area {
   display: flex;
@@ -478,7 +568,7 @@ footer {
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.2em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.45;
   transition: opacity 0.2s;
 }
@@ -489,7 +579,7 @@ footer {
   font-size: 16px;
   font-weight: 800;
   letter-spacing: 0.16em;
-  color: #f7f6f2;
+  color: var(--text);
   margin-bottom: 20px;
   display: block;
 }
@@ -509,7 +599,7 @@ footer {
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.24em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.35;
   margin-bottom: 20px;
 }
@@ -517,26 +607,26 @@ footer {
   display: block;
   font-size: 12px;
   font-weight: 300;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.6;
   line-height: 2;
   margin-bottom: 16px;
 }
 .shop_txt p span em {
   font-style: normal;
-  color: #f7f6f2;
+  color: var(--text);
   opacity: 0.9;
 }
 
 .footer_bottom {
   margin-top: 50px;
   padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.07);
+  border-top: 1px solid var(--line);
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
   font-weight: 400;
   letter-spacing: 0.12em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.25;
 }
 
@@ -547,7 +637,7 @@ footer {
 
 /* ===== ACCESS ===== */
 .access_area {
-  background: #0d0d0d;
+  background: var(--bg-soft);
   padding: 80px 60px;
 }
 .access_label {
@@ -555,7 +645,7 @@ footer {
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.28em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.35;
   text-align: center;
   margin-bottom: 50px;
@@ -587,13 +677,13 @@ footer {
   border-collapse: collapse;
 }
 .access_table tr {
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid var(--line);
 }
 .access_table th {
   font-size: 11px;
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.4;
   padding: 14px 0;
   width: 72px;
@@ -603,17 +693,17 @@ footer {
 }
 .access_table td {
   font-size: 13px;
-  color: #f7f6f2;
+  color: var(--text);
   opacity: 0.8;
   padding: 14px 0;
   line-height: 1.9;
 }
-.access_table td a { color: #f7f6f2; }
+.access_table td a { color: var(--text); }
 .access_note { font-size: 11px; opacity: 0.5; }
 .access_caution {
   margin-top: 18px;
   font-size: 11px;
-  color: #f7f6f2;
+  color: var(--text-muted);
   opacity: 0.35;
   line-height: 1.9;
 }
@@ -639,18 +729,18 @@ footer {
   z-index: 500;
   width: 52px;
   height: 52px;
-  background: #111;
-  border: 1px solid rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.96);
+  border: 1px solid var(--line);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #f7f6f2;
+  color: var(--text);
   transition: background 0.2s, transform 0.2s;
   box-shadow: 0 4px 16px rgba(0,0,0,0.5);
 }
 .ig_fixed:hover {
-  background: #333;
+  background: var(--bg-soft-2);
   transform: translateY(-2px);
 }
 
@@ -659,7 +749,7 @@ footer {
   display: none;
   position: fixed;
   bottom: 0; left: 0; right: 0;
-  background: rgba(17,17,17,0.95);
+  background: rgba(255,255,255,0.95);
   text-align: center;
   padding: 14px;
   z-index: 100;
@@ -667,8 +757,8 @@ footer {
   font-size: 11px;
   font-weight: 800;
   letter-spacing: 0.2em;
-  color: #f7f6f2;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  color: var(--text);
+  border-top: 1px solid var(--line);
 }
 @media (max-width: 740px) {
   .btn_location_sp { display: block; }
