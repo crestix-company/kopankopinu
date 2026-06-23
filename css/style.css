@@ -259,22 +259,6 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
   display: block;
   border-radius: 16px;
 }
-.calendar_placeholder {
-  min-height: 640px;
-  border: 1px dashed var(--line);
-  border-radius: 16px;
-  background: rgba(255,255,255,0.72);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 24px;
-}
-.calendar_placeholder p {
-  font-size: 14px;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-}
 @media (max-width: 740px) {
   .calendar_area {
     padding: 40px 16px 16px;
@@ -286,8 +270,7 @@ header .inner nav ul li.instagram_icon a img { width: 20px; height: 20px; }
     padding: 12px;
     border-radius: 18px;
   }
-  .calendar_embed iframe,
-  .calendar_placeholder {
+  .calendar_embed iframe {
     min-height: 520px;
     border-radius: 12px;
   }
