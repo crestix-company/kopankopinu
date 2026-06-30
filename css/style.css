@@ -446,7 +446,7 @@ main > section:nth-of-type(even) {
 .hours_block::after {
   content: "";
   width: min(220px, 100%);
-  height: 1px;
+  height: 3px;
   margin-top: 10px;
   background: var(--section-line);
 }
