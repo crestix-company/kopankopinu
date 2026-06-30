@@ -143,7 +143,7 @@ button {
 
 .overlay_nav a {
   font-family: var(--font-ui);
-  font-size: 1.08rem;
+  font-size: 1.18rem;
   font-weight: 500;
   letter-spacing: 0.28em;
   color: #fff;
@@ -725,7 +725,7 @@ main > section:nth-of-type(even) {
   }
 
   .overlay_nav a {
-    font-size: 0.98rem;
+    font-size: 1.08rem;
     letter-spacing: 0.2em;
   }
 
