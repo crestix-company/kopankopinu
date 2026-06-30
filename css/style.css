@@ -182,7 +182,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: clamp(112px, 18vh, 180px) 24px 116px;
+  padding: clamp(148px, 22vh, 216px) 24px 116px;
   text-align: center;
 }
 
@@ -206,7 +206,7 @@ button {
 }
 
 .hero_logo_bottom {
-  margin-top: -0.03em;
+  margin-top: 0.03em;
 }
 
 .hero_subtitle {
@@ -214,7 +214,7 @@ button {
   font-family: var(--font-ui);
   font-size: clamp(0.9rem, 2vw, 1.15rem);
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.06em;
   color: rgba(255, 255, 255, 0.9);
 }
 
@@ -226,12 +226,12 @@ button {
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 52px;
 }
 
 .slider_arrow {
-  width: 72px;
-  height: 72px;
+  width: 92px;
+  height: 92px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -257,7 +257,7 @@ button {
 
 .slider_arrow_mark {
   font-family: var(--font-ui);
-  font-size: 3rem;
+  font-size: 3.8rem;
   font-weight: 300;
   line-height: 1;
   margin-top: -0.08em;
@@ -724,7 +724,7 @@ main > section:nth-of-type(even) {
   }
 
   .hero_content {
-    padding: clamp(96px, 16vh, 132px) 20px 100px;
+    padding: clamp(126px, 20vh, 162px) 20px 100px;
   }
 
   .hero_logo_top,
@@ -734,21 +734,21 @@ main > section:nth-of-type(even) {
 
   .hero_subtitle {
     font-size: 0.84rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
   }
 
   .slider_controls {
     top: 69%;
-    gap: 12px;
+    gap: 28px;
   }
 
   .slider_arrow {
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
   }
 
   .slider_arrow_mark {
-    font-size: 2.4rem;
+    font-size: 3.1rem;
   }
 
   .slider_track {
