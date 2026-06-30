@@ -3,8 +3,6 @@
   var dots = Array.prototype.slice.call(document.querySelectorAll(".slider_dot"));
   var prevButton = document.querySelector(".slider_arrow.prev");
   var nextButton = document.querySelector(".slider_arrow.next");
-  var currentLabel = document.querySelector(".slider_current");
-  var totalLabel = document.querySelector(".slider_total");
   var currentIndex = 0;
   var autoplayId = null;
   var autoplayDelay = 5000;
@@ -19,15 +17,9 @@
     });
 
     currentIndex = index;
-    if (currentLabel) {
-      currentLabel.textContent = String(index + 1).padStart(2, "0");
-    }
   }
 
   if (slides.length) {
-    if (totalLabel) {
-      totalLabel.textContent = String(slides.length).padStart(2, "0");
-    }
     renderSlide(0);
   }
 
