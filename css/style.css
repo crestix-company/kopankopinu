@@ -194,7 +194,7 @@ button {
   color: #fff;
   font-family: var(--font-display);
   font-weight: 400;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.13em;
   line-height: 0.72;
 }
 
@@ -206,8 +206,8 @@ button {
 }
 
 .hero_logo_bottom {
-  letter-spacing: 0.075em;
-  margin-top: 0.05em;
+  letter-spacing: inherit;
+  margin-top: 0.04em;
 }
 
 .hero_subtitle {
