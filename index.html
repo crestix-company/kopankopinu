@@ -2,304 +2,224 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <title>COPAIN COPINE | 池田市のカフェ</title>
-<meta name="description" content="大阪府池田市のカフェ「COPAIN COPINE」。丁寧に淹れたコーヒーとふわふわのパンケーキ。阪急池田駅。営業時間10:00〜16:30。">
+<meta name="description" content="大阪府池田市のカフェ COPAIN COPINE。パンケーキ、ハンバーガー、コーヒー、陶芸工房、営業カレンダー、店舗情報をご案内します。">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Montserrat:wght@400;500;600;700&amp;family=Ramaraja&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 <div id="wrap">
 
-<!-- ===== HEADER ===== -->
-<header>
-
-  <!-- SP Header -->
-  <div class="header_sp pc_none">
-    <span class="sp_logo">COPAIN COPINE</span>
-    <button class="hamburger_btn" aria-label="メニューを開く">
-      <span></span><span></span><span></span>
+  <header id="home" class="hero">
+    <button class="menu_toggle" type="button" aria-label="メニューを開く" aria-controls="site-menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
-  </div>
 
-  <!-- SP Nav Drawer -->
-  <nav class="sp_nav">
-    <button class="sp_nav_close" aria-label="閉じる">✕</button>
-    <a href="#">HOME</a>
-    <a href="#hours">HOURS</a>
-    <a href="#menu">MENU</a>
-    <a href="#about">ABOUT</a>
-    <a href="#access">ACCESS</a>
-    <a href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&utm_source=qr" target="_blank" rel="noopener">INSTAGRAM</a>
-  </nav>
-
-  <!-- Slideshow -->
-  <div class="slide_area">
-    <div class="slide" style="background-image:url('img/DSC_0492.JPG')"></div>
-    <div class="slide" style="background-image:url('img/DSC_0499.JPG')"></div>
-    <div class="slide" style="background-image:url('img/DSC_0520.JPG')"></div>
-    <div class="slide" style="background-image:url('img/DSC_0522.JPG')"></div>
-    <div class="slide" style="background-image:url('img/DSC_0641.JPG')"></div>
-  </div>
-
-  <!-- Logo -->
-  <div class="logo_box">
-    <h1 class="hd_logo">
-      COPAIN COPINE
-      <span>COPAIN COPINE</span>
-      <em>Ikeda, Osaka</em>
-    </h1>
-  </div>
-
-  <!-- PC Nav -->
-  <div class="inner sp_none">
-    <span class="logo_left">COPAIN COPINE</span>
-    <nav>
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#hours">HOURS</a></li>
-        <li><a href="#menu">MENU</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#access">ACCESS</a></li>
-        <li><a href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&utm_source=qr" target="_blank" rel="noopener">INSTAGRAM</a></li>
-      </ul>
-    </nav>
-  </div>
-
-</header>
-<!-- / header -->
-
-<!-- ===== CALENDAR ===== -->
-<section class="calendar_area" aria-labelledby="calendar-title">
-  <div class="calendar_inner">
-    <div class="calendar_heading">
-      <p class="calendar_kicker">GOOGLE CALENDAR</p>
-      <h2 id="calendar-title">営業カレンダー</h2>
-      <p class="calendar_note">営業日や店休日のお知らせを掲載するカレンダーです。</p>
-    </div>
-    <div class="calendar_embed">
-      <iframe
-        src="https://calendar.google.com/calendar/embed?src=copaincopine414%40gmail.com&ctz=Asia%2FTokyo"
-        title="COPAIN COPINE 営業カレンダー"
-        style="border: 0"
-        width="800"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-        loading="lazy">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<div class="top_area">
-
-  <!-- ===== HOURS AREA ===== -->
-  <div id="hours" class="hours_area">
-
-    <div class="txt_box over">
-      <h2 class="ttl02">HOURS</h2>
-      <p>
-        <span>10:00AM — 4:30PM</span>
-        <span>LAST ORDER 4:00PM</span>
-      </p>
-      <p class="close">CLOSED<br>Tuesdays (irregular holidays)</p>
-    </div>
-
-    <!-- Coffee section -->
-    <div class="img_area over">
-      <div class="img">
-        <img src="img/im_coffee1.jpg" alt="COPAIN COPINEのコーヒー">
-      </div>
-    </div>
-    <div class="txt_lead_area txt_lead_left_area over">
-      <h3>COFFEE<span>こだわりのコーヒー</span></h3>
-      <p>一杯一杯、丁寧に向き合って淹れたコーヒー。<br>
-      豆の個性をやさしく引き出した、<br>
-      心がほっとほぐれるような味わいです。</p>
-      <p class="en">Each cup is carefully brewed, drawing out the gentle character of the beans.<br>
-      A warm, comforting taste that soothes the heart.</p>
-    </div>
-
-    <!-- Coffee photo 2 + pancake intro -->
-    <div class="news_box">
-      <p><img src="img/im_coffee2.jpg" alt="コーヒーとパンケーキ"></p>
-      <p><img src="img/im_pancake3.jpg" alt="パンケーキ"></p>
-      <p class="txt">テイクアウトも承っております。大切な方へのおみやげにもどうぞ。<br>
-        <span class="en">Takeout is also available. Our menu items make a wonderful gift for someone special.</span>
-      </p>
-    </div>
-
-    <!-- Pancake section -->
-    <div id="menu" class="bird_doughnut_area">
-      <div class="txt_lead_area over">
-        <h3>PANCAKE<span>パンケーキ</span></h3>
-        <p>ふんわりと焼き上げたパンケーキに、<br>
-        厳選したはちみつをたっぷりと。<br>
-        COPAIN COPINEを代表する、看板のひと皿です。</p>
-        <p class="en">Soft, fluffy pancakes generously drizzled with carefully selected honey —<br>
-        the signature dish of Copain Copine.</p>
-      </div>
-    </div>
-
-  </div><!-- / .hours_area -->
-
-
-  <!-- ===== ABOUT AREA ===== -->
-  <div id="about" class="about_area">
-
-    <!-- Honey feature -->
-    <div class="bread_box">
-      <p><img src="img/DSC_0621.JPG" alt="はちみつを使ったメニュー"></p>
-      <div class="txt_lead_area over">
-        <h3>HONEY<span>はちみつのこと</span></h3>
-        <p>自然のやさしさをそのままに。<br>
-        COPAIN COPINEでは、厳選したはちみつを<br>
-        パンケーキやドリンクに使っています。<br>
-        素材のおいしさを大切にした、シンプルなおいしさを。</p>
-        <p class="en">Pure and natural, just as it should be.<br>
-        We use carefully selected honey in our pancakes and drinks,<br>
-        celebrating the simple goodness of fine ingredients.</p>
-      </div>
-    </div>
-
-    <h2 id="access" class="ttl01">ABOUT COPAIN COPINE</h2>
-    <div class="img_area">
-      <p class="img_about"><img src="img/im1.JPG" alt="COPAIN COPINE 店内"></p>
-    </div>
-    <div class="txt_lead_area over">
-      <p>フランス語で「友だち」を意味する、COPAIN COPINE。<br>
-      池田の静かな街角に佇む小さなカフェです。<br>
-      大切な人と過ごすような、温かくゆったりとした時間を<br>
-      ここで感じてもらえたらと思っています。</p>
-      <p class="en">Copain Copine — French for "friend."<br>
-      A small cafe nestled in the quiet streets of Ikeda.<br>
-      We hope you find here the same warmth and ease you feel with a dear friend.</p>
-    </div>
-
-  </div><!-- / .about_area -->
-
-
-  <!-- ===== INSTAGRAM ===== -->
-  <h2 class="instagram">
-    <a class="inst" href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&utm_source=qr" target="_blank" rel="noopener">INSTAGRAM</a>
-  </h2>
-
-
-  <!-- ===== ACCESS ===== -->
-  <div class="access_area">
-    <p class="access_label">ACCESS</p>
-    <div class="access_grid">
-      <div class="access_map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.561535950308!2d135.42320207574951!3d34.81697147287863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f0c5de746ac1%3A0x959a6d6b8e1c0a70!2z44Kz44OR44Oz44O744Kz44OU44O844OM!5e0!3m2!1sja!2sjp!4v1781051693962!5m2!1sja!2sjp"
-          width="100%" height="100%" style="border:0;display:block;filter:grayscale(100%) contrast(1.1);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-      <div class="access_info">
-        <table class="access_table">
-          <tr>
-            <th>店名</th>
-            <td>COPAIN COPINE</td>
-          </tr>
-          <tr>
-            <th>住所</th>
-            <td>〒563-0041<br>大阪府池田市満寿美町１０−３</td>
-          </tr>
-          <tr>
-            <th>電話</th>
-            <td><a href="tel:0727512910">072-751-2910</a></td>
-          </tr>
-          <tr>
-            <th>営業時間</th>
-            <td>10:00 — 16:30<br><span class="access_note">月〜日（火曜不定休）</span></td>
-          </tr>
-          <tr>
-            <th>定休日</th>
-            <td>火曜日（不定休）</td>
-          </tr>
-          <tr>
-            <th>最寄駅</th>
-            <td>阪急宝塚本線<br>池田駅</td>
-          </tr>
-        </table>
-        <p class="access_caution">※ 営業日・時間は変更になる場合がございます。<br>お越しの際はInstagramまたはお電話でご確認ください。</p>
-      </div>
-    </div>
-  </div>
-
-</div><!-- / .top_area -->
-
-
-<!-- Page top -->
-<div class="pagetop_area over">
-  <a href="#wrap">↑ PAGE TOP</a>
-</div>
-
-
-<!-- ===== FOOTER ===== -->
-<footer>
-  <div class="link_area clearfix">
-
-    <div class="ft_menu_area">
-      <a class="footer_logo" href="#">
-        COPAIN COPINE
-        <span>COPAIN COPINE</span>
+    <nav id="site-menu" class="overlay_nav" aria-hidden="true">
+      <button class="overlay_close" type="button" aria-label="メニューを閉じる">×</button>
+      <a href="#home">HOME</a>
+      <a href="#pancakes">PANCAKES</a>
+      <a href="#humburger">HUMBURGER</a>
+      <a href="#coffee">COFFEE</a>
+      <a href="#studio">STUDIO</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#calendar">CALENDAR</a>
+      <a href="#location">LOCATION</a>
+      <a class="menu_instagram" href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/last画像/instagram icon white.png" alt="Instagram">
       </a>
-      <nav>
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#hours">HOURS</a></li>
-          <li><a href="#menu">MENU</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#access">ACCESS</a></li>
-          <li><a href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&utm_source=qr" target="_blank" rel="noopener">INSTAGRAM</a></li>
-          <li><a href="https://www.facebook.com/" target="_blank" rel="noopener">FACEBOOK</a></li>
-        </ul>
-      </nav>
+    </nav>
+
+    <div class="hero_slider" aria-label="HOME slideshow">
+      <div class="hero_slide active" style="background-image: url('images/HOME画像/home1.jpg');"></div>
+      <div class="hero_slide" style="background-image: url('images/HOME画像/home2.jpg');"></div>
+      <div class="hero_slide" style="background-image: url('images/HOME画像/home3.jpg');"></div>
+      <div class="hero_slide" style="background-image: url('images/HOME画像/home4.jpg');"></div>
+      <div class="hero_slide" style="background-image: url('images/HOME画像/home5.jpg');"></div>
     </div>
 
-    <div class="shop_box">
-      <div class="shop_txt">
-        <p>SHOP DATA</p>
-        <p>
-          <span><em>大阪府池田市満寿美町</em>１０−３　〒563-0041<br>
-          10-3 Masubecho, Ikeda-shi, Osaka　563-0041<br>
-          TEL 072-751-2910</span>
-          <span>HOURS<br>
-          10:00AM — 4:30PM<br>
-          LAST ORDER 4:00PM</span>
-          <span>CLOSED<br><em>火曜日（不定休）</em><br>
-          Tuesdays (irregular holidays)</span>
-        </p>
+    <div class="hero_content">
+      <h1 class="hero_logo">
+        <span class="hero_logo_top">COPAIN</span>
+        <span class="hero_logo_bottom">COPINE</span>
+      </h1>
+      <p class="hero_subtitle">Welcome to our home ＋studio</p>
+      <div class="hero_hours">
+        <p>10:00AM-16:30PM</p>
+        <p class="hero_hours_label">LAST ORDER 16:00PM</p>
+        <p class="hero_hours_label">CLOSED IRREGULARLY ON TUESDAY</p>
       </div>
     </div>
 
+    <div class="slider_controls" aria-label="スライド操作">
+      <button class="slider_arrow prev" type="button" aria-label="前の画像">
+        <span class="slider_arrow_mark">‹</span>
+      </button>
+      <div class="slider_track">
+        <div class="slider_dots">
+          <button class="slider_dot active" type="button" aria-label="1枚目を表示" data-slide="0"></button>
+          <button class="slider_dot" type="button" aria-label="2枚目を表示" data-slide="1"></button>
+          <button class="slider_dot" type="button" aria-label="3枚目を表示" data-slide="2"></button>
+          <button class="slider_dot" type="button" aria-label="4枚目を表示" data-slide="3"></button>
+          <button class="slider_dot" type="button" aria-label="5枚目を表示" data-slide="4"></button>
+        </div>
+        <p class="slider_meta"><span class="slider_current">01</span><span class="slider_divider">/</span><span class="slider_total">05</span></p>
+      </div>
+      <button class="slider_arrow next" type="button" aria-label="次の画像">
+        <span class="slider_arrow_mark">›</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="pancakes" class="content_section">
+      <div class="section_media">
+        <img src="images/category画像/pancake.jpg" alt="パンケーキ">
+      </div>
+      <div class="section_copy">
+        <h2 class="section_title">PANCAKES</h2>
+        <p class="jp">ふわふわ食感のスフレパンケーキ。<br>オーダーを受けてから、<br>メレンゲ生地を作り焼き上げます。<br>花の種類で選べる<br>３種のシングルフラワーハニーとハニコムバターで<br>お召し上がりください。</p>
+        <p class="en">Fluffy soufflé pancakes.<br>We make the meringue batter and bake them to order. Enjoy them with one of three types of single-flower honey (chosen by the type of flower) and honeycomb butter.</p>
+        <p class="more_wrap"><a class="more_button" href="images/last画像/pancake_menu.jpg" target="_blank" rel="noopener">MORE</a></p>
+      </div>
+    </section>
+
+    <section id="humburger" class="content_section">
+      <div class="section_media">
+        <img src="images/category画像/humberger.JPG" alt="ハンバーガー">
+      </div>
+      <div class="section_copy">
+        <h2 class="section_title">HUMBURGER</h2>
+        <p class="jp">国産牛のハンバーガー。<br>天然酵母のサクっと香ばしいバンズ、<br>とろとろナチュラルチ－ズ、<br>自家製サルサとオーロラソースでどうぞ。</p>
+        <p class="en">A hamburger made with domestically raised beef.<br>Enjoy it on a crispy, fragrant bun made with natural yeast, with melted natural cheese, homemade salsa, and aurora sauce.</p>
+        <p class="more_wrap"><a class="more_button" href="images/last画像/burger_menu.jpg" target="_blank" rel="noopener">MORE</a></p>
+      </div>
+    </section>
+
+    <section id="coffee" class="content_section coffee_section">
+      <div class="section_media dual_media">
+        <img src="images/category_２画像/coffee1.png" alt="コーヒー">
+        <img src="images/category_２画像/coffee2.jpg" alt="コーヒーのある風景">
+      </div>
+      <div class="section_copy">
+        <h2 class="section_title">COFFEE</h2>
+        <p class="jp">挽きたての新鮮な豆を、<br>一杯一杯丁寧にハンドドリップします。<br>オリジナルの手作り陶器で<br>ゆっくりお召し上がりください。</p>
+        <p class="en">We carefully hand-drip each cup using freshly ground beans.<br>Enjoy your coffee slowly in our original, handcrafted ceramic cups.</p>
+        <div class="takeout_panel">
+          <img src="images/last画像/humburger+pancakes_illust_2.jpg" alt="テイクアウトイラスト">
+          <h3 class="takeout_title">TAKEOUT OK !!</h3>
+          <p class="jp">テイクアウト出来ます。<br>大切な方へのお土産にもどうぞ。<br>お電話でもご予約承ります。</p>
+          <p class="en">Takeout is available.<br>Perfect as a gift for someone special. Reservations can also be made by phone.</p>
+          <p class="more_wrap"><a class="more_button" href="images/last画像/takeout.jpg" target="_blank" rel="noopener">MORE</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="studio" class="content_section">
+      <div class="section_media">
+        <img src="images/category画像/studio.jpg" alt="陶芸工房">
+      </div>
+      <div class="section_copy">
+        <h2 class="section_title">STUDIO</h2>
+        <p class="jp">陶芸教室を併設しております。<br>お問い合わせくださいませ。</p>
+        <p class="en">We also have a pottery class on-site.<br>Please contact us for more information.</p>
+        <p class="more_wrap"><a class="more_button" href="images/last画像/workshop.jpg" target="_blank" rel="noopener">MORE</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="content_section">
+      <div class="section_media">
+        <img src="images/copaincopine.jpg" alt="COPAIN COPINE 店内">
+      </div>
+      <div class="section_copy">
+        <h2 class="section_title">ABOUT US</h2>
+        <p class="jp">陶芸工房の有る小さなカフェです。<br>昭和元年築の祖父の家より<br>移築の建具や家具や照明と異国のアンティーク。<br>どこか懐かしいお爺ちゃんちの雰囲気。<br>フランスの子どもたちの“お友達”を意味する<br>COPAIN COPINE。<br>ちょっとお友達のお家へ…そんな感覚で、<br>心ほぐす時間を<br>ゆったりと過ごしていただければと願います。</p>
+        <p class="en">This is a small cafe with a pottery studio.<br>The fixtures, furniture, and lighting were relocated from my grandfather's house, built in 1926, along with antiques from other countries.<br>It has the nostalgic atmosphere of a grandfather's house.<br>COPAIN COPINE means "friend" to children in France.<br>We hope you can relax and unwind here, feeling as if you're visiting a friend's house.</p>
+      </div>
+    </section>
+
+    <section id="calendar" class="calendar_section">
+      <div class="section_inner">
+        <h2 class="display_title">CALENDAR</h2>
+        <div class="calendar_embed">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=copaincopine414%40gmail.com&amp;ctz=Asia%2FTokyo"
+            title="COPAIN COPINE CALENDAR"
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="location" class="location_section">
+      <div class="section_inner">
+        <h2 class="display_title">LOCATION</h2>
+        <div class="location_layout">
+          <div class="location_map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.561535950308!2d135.42320207574951!3d34.81697147287863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000f0c5de746ac1%3A0x959a6d6b8e1c0a70!2z44Kz44OR44Oz44O744Kz44OU44O844OM!5e0!3m2!1sja!2sjp!4v1781051693962!5m2!1sja!2sjp"
+              width="100%"
+              height="100%"
+              style="border:0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div class="location_copy">
+            <div class="location_copy_jp">
+              <p>COPAIN COPINE</p>
+              <p>〒563-0041</p>
+              <p>大阪府池田市満寿美町10-3</p>
+              <p>TEL / <a href="tel:0727512910">072-751-2910</a></p>
+              <p>営業時間 / 10:00am〜16:30pm</p>
+              <p>ラストオーダー / 16:00pm</p>
+              <p>定休日 / 火曜不定休<br>（カレンダーよりご確認ください）</p>
+            </div>
+            <div class="location_copy_en">
+              <p class="location_gap">10-3 Masumi-cho Ikeda-shi Osaka JAPAN</p>
+              <p>TEL / 072 751 2910</p>
+              <p>HOURS / 10:00AM-16:30PM</p>
+              <p>LAST ORDER / 16:00PM</p>
+              <p>CLOSED / IRREGULARLY ON TUESDAY</p>
+              <p>(Please check the calendar)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="page_actions">
+    <a class="page_top_link" href="#home">PAGE TOP</a>
+    <a class="footer_instagram" href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+      <img src="images/last画像/instagram icon black.png" alt="Instagram">
+    </a>
   </div>
-  <p class="footer_bottom">© COPAIN COPINE. All Rights Reserved.</p>
-</footer><!-- / footer -->
 
+  <footer class="footer_nav">
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#pancakes">PANCAKES</a>
+      <a href="#humburger">HUMBURGER</a>
+      <a href="#coffee">COFFEE</a>
+      <a href="#studio">STUDIO</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#calendar">CALENDAR</a>
+      <a href="#location">LOCATION</a>
+      <a class="footer_nav_instagram" href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="images/last画像/instagram icon white.png" alt="Instagram">
+      </a>
+    </nav>
+  </footer>
 
-<!-- SP Bottom Location -->
-<p class="btn_location_sp pc_none">
-  <a href="tel:0727512910">☎ 072-751-2910</a>
-</p>
-
-</div><!-- / #wrap -->
-
-<!-- Instagram fixed button -->
-<a href="https://www.instagram.com/copain._.copine?igsh=ZmZ1aDhvbTJnZ2lo&utm_source=qr" target="_blank" rel="noopener" class="ig_fixed" aria-label="Instagram">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="22" height="22">
-    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-    <circle cx="12" cy="12" r="4.5"/>
-    <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
-  </svg>
-</a>
-
+</div>
 <script src="js/script.js"></script>
 </body>
 </html>
