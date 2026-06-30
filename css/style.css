@@ -642,14 +642,14 @@ main > section:nth-of-type(even) {
 
 .page_actions {
   width: 100%;
-  min-height: 118px;
+  min-height: 148px;
   padding: 24px 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   align-content: center;
-  gap: 14px;
+  gap: 22px;
   background: var(--bg);
 }
 
@@ -674,13 +674,13 @@ main > section:nth-of-type(even) {
 }
 
 .footer_instagram {
-  width: 112px;
-  min-height: 112px;
+  width: 136px;
+  min-height: 136px;
 }
 
 .footer_instagram img {
-  width: 68px;
-  height: 68px;
+  width: 88px;
+  height: 88px;
 }
 
 .footer_nav {
@@ -868,10 +868,11 @@ main > section:nth-of-type(even) {
 
   .page_actions {
     flex-direction: column;
-    min-height: 152px;
+    min-height: 196px;
     padding: 24px 20px;
     justify-content: center;
     align-content: center;
+    gap: 18px;
   }
 
   .page_top_link {
