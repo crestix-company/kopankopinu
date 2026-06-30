@@ -440,6 +440,15 @@ main > section:nth-of-type(even) {
   text-align: center;
   display: grid;
   gap: 8px;
+  justify-items: center;
+}
+
+.hours_block::after {
+  content: "";
+  width: min(220px, 100%);
+  height: 1px;
+  margin-top: 10px;
+  background: var(--section-line);
 }
 
 .hours_time,
