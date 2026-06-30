@@ -6,6 +6,8 @@
   var currentLabel = document.querySelector(".slider_current");
   var totalLabel = document.querySelector(".slider_total");
   var currentIndex = 0;
+  var autoplayId = null;
+  var autoplayDelay = 5000;
 
   function renderSlide(index) {
     slides.forEach(function(slide, slideIndex) {
@@ -34,23 +36,59 @@
     renderSlide(nextIndex);
   }
 
+  function stopAutoplay() {
+    if (autoplayId !== null) {
+      window.clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  }
+
+  function startAutoplay() {
+    if (slides.length < 2) {
+      return;
+    }
+
+    stopAutoplay();
+    autoplayId = window.setInterval(function() {
+      showNext(1);
+    }, autoplayDelay);
+  }
+
+  function resetAutoplay() {
+    startAutoplay();
+  }
+
   if (prevButton) {
     prevButton.addEventListener("click", function() {
       showNext(-1);
+      resetAutoplay();
     });
   }
 
   if (nextButton) {
     nextButton.addEventListener("click", function() {
       showNext(1);
+      resetAutoplay();
     });
   }
 
   dots.forEach(function(dot) {
     dot.addEventListener("click", function() {
       renderSlide(Number(dot.getAttribute("data-slide")));
+      resetAutoplay();
     });
   });
+
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) {
+      stopAutoplay();
+      return;
+    }
+
+    startAutoplay();
+  });
+
+  startAutoplay();
 })();
 
 (function() {

@@ -1,13 +1,13 @@
 :root {
-  --bg: #050505;
-  --bg-soft: #101010;
-  --bg-card: #151515;
-  --line: rgba(255, 255, 255, 0.18);
-  --text: #f5f3ed;
-  --text-soft: rgba(245, 243, 237, 0.78);
-  --text-faint: rgba(245, 243, 237, 0.58);
-  --button-dark: #0f0f0f;
-  --button-light: #f5f3ed;
+  --bg: #ffffff;
+  --bg-soft: #f7f3ee;
+  --bg-card: #ffffff;
+  --line: rgba(17, 17, 17, 0.12);
+  --text: #111111;
+  --text-soft: rgba(17, 17, 17, 0.82);
+  --text-faint: rgba(17, 17, 17, 0.66);
+  --button-dark: #111111;
+  --button-light: #ffffff;
   --font-display: "Ramaraja", serif;
   --font-ui: "Montserrat", sans-serif;
   --font-title: "Anton", sans-serif;
@@ -82,8 +82,8 @@ button {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.58)),
-    rgba(0, 0, 0, 0.36);
+    linear-gradient(to bottom, rgba(32, 32, 32, 0.12), rgba(32, 32, 32, 0.32)),
+    rgba(64, 64, 64, 0.14);
 }
 
 .hero_slide.active {
@@ -98,21 +98,20 @@ button {
   z-index: 30;
   width: 52px;
   height: 52px;
-  border: 1px solid rgba(255, 255, 255, 0.26);
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 0.28);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 5px;
   cursor: pointer;
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .menu_toggle:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.42);
+  opacity: 0.72;
 }
 
 .menu_toggle span {
@@ -144,7 +143,7 @@ button {
 
 .overlay_nav a {
   font-family: var(--font-ui);
-  font-size: 0.95rem;
+  font-size: 1.08rem;
   font-weight: 500;
   letter-spacing: 0.28em;
   color: #fff;
@@ -157,8 +156,8 @@ button {
   right: 28px;
   width: 52px;
   height: 52px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
+  border: 0;
+  border-radius: 0;
   background: transparent;
   color: #fff;
   font-size: 1.8rem;
@@ -195,21 +194,19 @@ button {
   color: #fff;
   font-family: var(--font-display);
   font-weight: 400;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   line-height: 0.84;
 }
 
 .hero_logo_top,
 .hero_logo_bottom {
   display: block;
-  font-size: clamp(4.3rem, 10vw, 8.7rem);
+  font-size: clamp(3.3rem, 7.6vw, 6.5rem);
+  letter-spacing: inherit;
 }
 
 .hero_logo_bottom {
-  margin-top: -0.02em;
-  letter-spacing: 0.05em;
-  transform: scaleX(0.86);
-  transform-origin: center;
+  margin-top: 0.04em;
 }
 
 .hero_subtitle {
@@ -219,32 +216,6 @@ button {
   font-weight: 500;
   letter-spacing: 0.22em;
   color: rgba(255, 255, 255, 0.9);
-}
-
-.hero_hours {
-  margin-top: 24px;
-  padding: 14px 22px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-}
-
-.hero_hours p {
-  margin: 0;
-  text-align: center;
-  font-family: var(--font-ui);
-  color: rgba(255, 255, 255, 0.92);
-}
-
-.hero_hours p + p {
-  margin-top: 6px;
-}
-
-.hero_hours_label {
-  font-size: 0.72rem;
-  letter-spacing: 0.22em;
-  color: rgba(255, 255, 255, 0.74);
 }
 
 .slider_controls {
@@ -261,25 +232,22 @@ button {
 .slider_arrow {
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 248, 236, 0.22);
-  border-radius: 999px;
-  background: rgba(18, 14, 10, 0.18);
-  backdrop-filter: blur(8px);
+  border: 0;
+  border-radius: 0;
+  background: transparent;
   color: rgba(255, 248, 236, 0.92);
   cursor: pointer;
   padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+  box-shadow: none;
+  transition: transform 0.25s ease, opacity 0.25s ease, color 0.25s ease;
 }
 
 .slider_arrow:hover {
   transform: translateY(-2px);
-  background: rgba(255, 248, 236, 0.16);
-  border-color: rgba(255, 248, 236, 0.42);
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+  opacity: 0.76;
   color: #fff;
 }
 
@@ -359,9 +327,28 @@ button {
 }
 
 main {
-  background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.05), transparent 38%),
-    var(--bg);
+  background: var(--bg);
+}
+
+main > section {
+  --section-bg: #ffffff;
+  --section-text: #111111;
+  --section-text-soft: rgba(17, 17, 17, 0.82);
+  --section-text-faint: rgba(17, 17, 17, 0.66);
+  --section-line: rgba(17, 17, 17, 0.12);
+  --section-button-hover-bg: #111111;
+  --section-button-hover-text: #ffffff;
+  background: var(--section-bg);
+}
+
+main > section:nth-of-type(even) {
+  --section-bg: #111111;
+  --section-text: #ffffff;
+  --section-text-soft: rgba(255, 255, 255, 0.82);
+  --section-text-faint: rgba(255, 255, 255, 0.68);
+  --section-line: rgba(255, 255, 255, 0.18);
+  --section-button-hover-bg: #ffffff;
+  --section-button-hover-text: #111111;
 }
 
 .section_inner {
@@ -379,18 +366,19 @@ main {
   padding: 0 0 72px;
 }
 
-.section_media,
+.section_media {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
 .calendar_embed,
 .location_layout {
   width: min(1100px, calc(100% - 40px));
   margin: 0 auto;
-}
-
-.section_media {
-  overflow: hidden;
-  border-radius: 28px;
-  background: var(--bg-card);
-  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.38);
 }
 
 .section_media img {
@@ -426,13 +414,47 @@ main {
   text-align: center;
 }
 
+.hours_section {
+  padding: 48px 0 28px;
+}
+
+.hours_title {
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.hours_block {
+  text-align: center;
+}
+
+.hours_time,
+.hours_detail {
+  margin: 0;
+  color: var(--section-text);
+}
+
+.hours_time {
+  font-family: var(--font-ui);
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.hours_detail {
+  margin-top: 8px;
+  font-family: var(--font-ui);
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  color: var(--section-text-faint);
+}
+
 .section_title {
   margin: 0 0 22px;
   font-family: var(--font-title);
   font-size: clamp(2rem, 4vw, 3.15rem);
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: var(--text);
+  color: var(--section-text);
 }
 
 .display_title {
@@ -442,7 +464,7 @@ main {
   font-size: clamp(2.3rem, 5vw, 4.1rem);
   font-weight: 400;
   letter-spacing: 0.1em;
-  color: var(--text);
+  color: var(--section-text);
 }
 
 .jp,
@@ -455,7 +477,7 @@ main {
   font-family: var(--font-jp);
   font-size: 0.98rem;
   line-height: 2.05;
-  color: var(--text-soft);
+  color: var(--section-text-soft);
 }
 
 .en {
@@ -463,7 +485,7 @@ main {
   font-family: var(--font-en);
   font-size: 0.98rem;
   line-height: 1.95;
-  color: var(--text-faint);
+  color: var(--section-text-faint);
 }
 
 .more_wrap {
@@ -472,10 +494,10 @@ main {
 
 .takeout_panel {
   margin-top: 38px;
-  padding: 30px 24px;
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.02));
+  padding: 30px 0 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .takeout_panel img {
@@ -489,7 +511,7 @@ main {
   font-size: clamp(1.6rem, 3vw, 2.3rem);
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: var(--text);
+  color: var(--section-text);
 }
 
 .more_button {
@@ -498,8 +520,8 @@ main {
   justify-content: center;
   min-width: 150px;
   min-height: 48px;
-  border: 1px solid rgba(255, 255, 255, 0.36);
-  color: #fff;
+  border: 1px solid var(--section-line);
+  color: var(--section-text);
   background: transparent;
   font-family: var(--font-ui);
   font-size: 0.84rem;
@@ -509,8 +531,8 @@ main {
 }
 
 .more_button:hover {
-  background: #fff;
-  color: #000;
+  background: var(--section-button-hover-bg);
+  color: var(--section-button-hover-text);
 }
 
 .calendar_section {
@@ -518,11 +540,11 @@ main {
 }
 
 .calendar_embed {
-  border-radius: 28px;
+  border-radius: 0;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid var(--section-line);
   background: #fff;
-  padding: 14px;
+  padding: 0;
 }
 
 .calendar_embed iframe {
@@ -542,10 +564,10 @@ main {
 
 .location_map {
   min-height: 560px;
-  border-radius: 28px;
+  border-radius: 0;
   overflow: hidden;
-  border: 1px solid var(--line);
-  background: #111;
+  border: 1px solid var(--section-line);
+  background: #fff;
 }
 
 .location_map iframe {
@@ -556,10 +578,10 @@ main {
 }
 
 .location_copy {
-  border: 1px solid var(--line);
-  border-radius: 28px;
+  border: 0;
+  border-radius: 0;
   padding: 42px 28px;
-  background: var(--bg-card);
+  background: transparent;
   text-align: center;
 }
 
@@ -569,7 +591,7 @@ main {
   font-size: 0.97rem;
   font-weight: 400;
   line-height: 1.9;
-  color: var(--text);
+  color: var(--section-text);
 }
 
 .location_copy_jp p {
@@ -611,9 +633,9 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 52px;
-  border: 1px solid #fff;
+  border: 1px solid rgba(17, 17, 17, 0.18);
   background: #fff;
-  color: #000;
+  color: var(--text);
 }
 
 .page_top_link {
@@ -637,6 +659,7 @@ main {
 .footer_nav {
   padding: 26px 20px 38px;
   background: #000;
+  border-top: 0;
 }
 
 .footer_nav nav {
@@ -702,7 +725,7 @@ main {
   }
 
   .overlay_nav a {
-    font-size: 0.86rem;
+    font-size: 0.98rem;
     letter-spacing: 0.2em;
   }
 
@@ -712,22 +735,12 @@ main {
 
   .hero_logo_top,
   .hero_logo_bottom {
-    font-size: clamp(3.2rem, 18vw, 5.4rem);
+    font-size: clamp(2.6rem, 14.5vw, 4.4rem);
   }
 
   .hero_subtitle {
     font-size: 0.84rem;
     letter-spacing: 0.15em;
-  }
-
-  .hero_hours {
-    margin-top: 18px;
-    padding: 12px 16px;
-  }
-
-  .hero_hours_label {
-    font-size: 0.64rem;
-    letter-spacing: 0.14em;
   }
 
   .slider_controls {
@@ -764,7 +777,7 @@ main {
   }
 
   .hours_section {
-    padding: 78px 0 54px;
+    padding: 42px 0 44px;
   }
 
   .content_section,
@@ -773,7 +786,6 @@ main {
     padding-bottom: 58px;
   }
 
-  .section_media,
   .calendar_embed,
   .location_layout,
   .hours_section .section_inner {
@@ -781,7 +793,8 @@ main {
   }
 
   .section_media {
-    border-radius: 22px;
+    width: 100%;
+    border-radius: 0;
   }
 
   .dual_media img {
@@ -799,8 +812,7 @@ main {
 
   .takeout_panel {
     margin-top: 30px;
-    padding: 24px 18px;
-    border-radius: 22px;
+    padding: 24px 0 0;
   }
 
   .jp,
@@ -810,8 +822,8 @@ main {
   }
 
   .calendar_embed {
-    padding: 10px;
-    border-radius: 22px;
+    padding: 0;
+    border-radius: 0;
   }
 
   .calendar_embed iframe {
@@ -820,7 +832,7 @@ main {
 
   .location_map,
   .location_copy {
-    border-radius: 22px;
+    border-radius: 0;
   }
 
   .location_copy {
