@@ -250,106 +250,112 @@ button {
 .slider_controls {
   position: absolute;
   left: 50%;
-  bottom: 34px;
+  bottom: 30px;
   z-index: 12;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 18px;
 }
 
 .slider_arrow {
-  width: 52px;
-  height: 52px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 248, 236, 0.22);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
-  color: #fff;
+  background: rgba(18, 14, 10, 0.18);
+  backdrop-filter: blur(8px);
+  color: rgba(255, 248, 236, 0.92);
   cursor: pointer;
   padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
 }
 
 .slider_arrow:hover {
-  transform: translateY(-2px) scale(1.03);
-  background: rgba(255, 255, 255, 0.16);
-  border-color: rgba(255, 255, 255, 0.38);
+  transform: translateY(-2px);
+  background: rgba(255, 248, 236, 0.16);
+  border-color: rgba(255, 248, 236, 0.42);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.24);
+  color: #fff;
 }
 
 .slider_arrow:active {
-  transform: translateY(0) scale(0.98);
+  transform: translateY(0) scale(0.96);
 }
 
 .slider_arrow_mark {
-  font-family: var(--font-display);
-  font-size: 2rem;
+  font-family: var(--font-ui);
+  font-size: 1.55rem;
+  font-weight: 300;
   line-height: 1;
-  margin-top: -0.12em;
+  margin-top: -0.08em;
 }
 
 .slider_track {
-  min-width: 240px;
-  padding: 14px 22px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  min-width: 238px;
+  padding: 12px 20px 10px;
+  border: 1px solid rgba(255, 248, 236, 0.16);
   border-radius: 999px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.05));
-  backdrop-filter: blur(12px);
-  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(180deg, rgba(48, 38, 29, 0.48), rgba(24, 18, 14, 0.34));
+  backdrop-filter: blur(16px);
+  box-shadow:
+    0 18px 34px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .slider_dots {
   display: flex;
-  gap: 8px;
+  gap: 10px;
   justify-content: center;
+  align-items: center;
 }
 
 .slider_dot {
-  width: 28px;
-  height: 8px;
+  width: 20px;
+  height: 4px;
   border: 0;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 248, 236, 0.26);
   cursor: pointer;
   padding: 0;
-  transition: width 0.28s ease, background 0.28s ease, transform 0.28s ease;
+  transition: width 0.28s ease, background 0.28s ease, transform 0.28s ease, opacity 0.28s ease;
 }
 
 .slider_dot:hover {
-  background: rgba(255, 255, 255, 0.62);
-  transform: scaleX(1.08);
+  background: rgba(255, 248, 236, 0.72);
+  transform: scaleX(1.12);
 }
 
 .slider_dot.active {
-  width: 52px;
-  background: #fff;
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.38);
+  width: 44px;
+  background: #fff8ec;
+  box-shadow: 0 0 14px rgba(255, 248, 236, 0.22);
 }
 
 .slider_meta {
-  margin: 10px 0 0;
+  margin: 9px 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
   font-family: var(--font-ui);
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.28em;
-  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  color: rgba(255, 248, 236, 0.72);
 }
 
 .slider_current {
-  color: #fff;
+  color: #fff8ec;
 }
 
 .slider_divider,
 .slider_total {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 248, 236, 0.42);
 }
 
 main {
@@ -725,36 +731,36 @@ main {
   }
 
   .slider_controls {
-    bottom: 22px;
-    gap: 10px;
+    bottom: 20px;
+    gap: 12px;
   }
 
   .slider_arrow {
-    width: 44px;
-    height: 44px;
+    width: 38px;
+    height: 38px;
   }
 
   .slider_arrow_mark {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
   }
 
   .slider_track {
-    min-width: 192px;
-    padding: 11px 16px 10px;
+    min-width: 182px;
+    padding: 10px 16px 8px;
   }
 
   .slider_dot {
-    width: 20px;
-    height: 7px;
+    width: 16px;
+    height: 4px;
   }
 
   .slider_dot.active {
-    width: 38px;
+    width: 32px;
   }
 
   .slider_meta {
-    margin-top: 8px;
-    font-size: 0.62rem;
+    margin-top: 7px;
+    font-size: 0.56rem;
   }
 
   .hours_section {
