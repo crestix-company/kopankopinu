@@ -226,12 +226,12 @@ button {
   transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  gap: 78px;
+  gap: 116px;
 }
 
 .slider_arrow {
-  width: 114px;
-  height: 114px;
+  width: 140px;
+  height: 140px;
   border: 0;
   border-radius: 0;
   background: transparent;
@@ -257,7 +257,7 @@ button {
 
 .slider_arrow_mark {
   font-family: var(--font-ui);
-  font-size: 4.5rem;
+  font-size: 5.4rem;
   font-weight: 300;
   line-height: 1;
   margin-top: -0.08em;
@@ -402,6 +402,16 @@ main > section:nth-of-type(even) {
   text-align: center;
 }
 
+.coffee_secondary_media {
+  margin-top: 30px;
+}
+
+.coffee_secondary_media img {
+  width: 100%;
+  min-height: 320px;
+  object-fit: cover;
+}
+
 .hours_section {
   padding: 48px 0 28px;
 }
@@ -493,7 +503,10 @@ main > section:nth-of-type(even) {
 
 .takeout_panel img {
   width: min(260px, 100%);
+  height: 122px;
   margin: 0 auto 18px;
+  object-fit: cover;
+  object-position: center bottom;
 }
 
 .takeout_title {
@@ -511,7 +524,7 @@ main > section:nth-of-type(even) {
   justify-content: center;
   min-width: 150px;
   min-height: 48px;
-  border: 3px solid var(--section-line);
+  border: 4px solid var(--section-line);
   color: var(--section-text);
   background: transparent;
   font-family: var(--font-ui);
@@ -739,16 +752,16 @@ main > section:nth-of-type(even) {
 
   .slider_controls {
     top: 69%;
-    gap: 40px;
+    gap: 58px;
   }
 
   .slider_arrow {
-    width: 82px;
-    height: 82px;
+    width: 96px;
+    height: 96px;
   }
 
   .slider_arrow_mark {
-    font-size: 3.6rem;
+    font-size: 4.2rem;
   }
 
   .slider_track {
@@ -793,6 +806,10 @@ main > section:nth-of-type(even) {
   .section_copy {
     width: calc(100% - 32px);
     padding-top: 34px;
+  }
+
+  .coffee_secondary_media img {
+    min-height: 240px;
   }
 
   .takeout_panel {
