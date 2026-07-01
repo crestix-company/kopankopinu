@@ -211,7 +211,7 @@ button {
 
 .hero_logo_bottom {
   letter-spacing: 0.046em;
-  margin-top: 0.105em;
+  margin-top: 0.02em;
 }
 
 .hero_subtitle {
@@ -261,12 +261,11 @@ button {
 }
 
 .slider_arrow_mark {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--font-ui);
   font-size: 9.6rem;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1;
   margin-top: -0.08em;
-  transform: scaleX(0.72);
 }
 
 .slider_track {
@@ -358,6 +357,10 @@ main > section:nth-of-type(even) {
 .calendar_section,
 .location_section {
   padding: 0 0 72px;
+}
+
+.location_section {
+  padding-bottom: 18px;
 }
 
 .section_media {
@@ -453,7 +456,7 @@ main > section:nth-of-type(even) {
   width: min(360px, 100%);
   height: 8px;
   margin-top: 22px;
-  background: var(--section-line);
+  background: var(--section-text);
 }
 
 .hours_time,
@@ -507,7 +510,7 @@ main > section:nth-of-type(even) {
   width: min(360px, 100%);
   height: 7px;
   margin: 34px auto 0;
-  background: var(--section-line);
+  background: var(--section-text);
 }
 
 .display_title {
@@ -554,7 +557,7 @@ main > section:nth-of-type(even) {
 }
 
 .takeout_panel img {
-  width: min(400px, 100%);
+  width: min(380px, 100%);
   height: auto;
   margin: 0 auto 18px;
 }
@@ -677,15 +680,15 @@ main > section:nth-of-type(even) {
 
 .page_actions {
   width: 100%;
-  min-height: 148px;
-  padding: 20px 20px;
+  min-height: 92px;
+  padding: 4px 20px 12px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   align-content: center;
-  gap: 6px;
+  gap: 0;
   background: var(--bg);
 }
 
@@ -702,6 +705,7 @@ main > section:nth-of-type(even) {
 
 .page_top_link {
   min-width: 172px;
+  min-height: 38px;
   padding: 0 14px;
   font-family: var(--font-ui);
   font-size: 0.84rem;
@@ -710,13 +714,13 @@ main > section:nth-of-type(even) {
 }
 
 .footer_instagram {
-  width: 72px;
-  min-height: 72px;
+  width: 52px;
+  min-height: 52px;
 }
 
 .footer_instagram img {
-  width: 44px;
-  height: 44px;
+  width: 34px;
+  height: 34px;
 }
 
 .footer_nav {
@@ -904,11 +908,11 @@ main > section:nth-of-type(even) {
 
   .page_actions {
     flex-direction: column;
-    min-height: 148px;
-    padding: 18px 16px;
+    min-height: 92px;
+    padding: 4px 16px 12px;
     justify-content: center;
     align-content: center;
-    gap: 6px;
+    gap: 0;
   }
 
   .page_top_link {
