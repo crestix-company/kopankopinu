@@ -415,6 +415,10 @@ main > section:nth-of-type(even) {
   margin-top: 30px;
 }
 
+.about_secondary_media {
+  margin-top: 20px;
+}
+
 .coffee_secondary_media img {
   width: 100%;
   min-height: 320px;
